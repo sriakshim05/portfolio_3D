@@ -1,6 +1,20 @@
  import React from 'react'
  import { useState } from "react";
+ import { navLinks } from '../constants/index.js';
+const NavItems =()=>{
+  return(
+  <ul className='nav-ul'>
+    {navLinks.map(({id,href,name})=>(
+      <li key={id} className='nav-li'>
+        <a href={href}className='nav-ul_a' onClick={()=>{}}>
+          {name}
+        </a>
+      </li>
+    ))}
 
+  </ul>
+  )
+}
  const Navbar = () => {
   const [isOpen,setIsOpen]=useState(false);
   const toggleMenu=()=>setIsOpen((prevIsOpen)=>!prevIsOpen);
@@ -17,10 +31,15 @@
 
         </button>
         <nav className='sm:flex hideen'>
-
+          <NavItems/>
         </nav>
       </div>
       </div>
+      <div className ={`nav-sidebar $ {isOPen ? 'max-h-screen' : 'max-h-0'}`}> 
+        <nav className="p-5">
+          <NavItems/>
+          </nav>     
+           </div>
      </header>
    ) 
  }
