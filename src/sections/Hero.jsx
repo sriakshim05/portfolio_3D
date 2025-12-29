@@ -4,6 +4,7 @@ import { PerspectiveCamera } from '@react-three/drei'
 import HackerRoom from '../components/HackerRoom.jsx'
 import CanvasLoader from '../components/CanvasLoader.jsx'
 import { Leva, useControls } from 'leva'
+import { MagneticText } from '../components/MagneticText.jsx'
 
 export const Hero = () => {
 
@@ -12,16 +13,16 @@ export const Hero = () => {
   return (
     <section className="min-h-screen w-full flex flex-col relative">
 
-      <div className="w-full mx-auto flex flex-col sm:mt-36 mt-20 c-space gap-3">
+      <div className="w-full mx-auto flex flex-col sm:mt-36 mt-20 c-space gap-3 relative z-20">
         <p className="sm:text-3xl text-2xl font-medium text-white text-center font-generalsans">
           Hi I am Akash <span className="waving-hand">👋</span>
         </p>
-        <p className="hero_tag text-gray_gradient text-center">
-          Building Apps & Websites
-        </p>
+        
+          <MagneticText/>
+    
       </div>
 
-      <div className="w-full h-full absolute inset-0">
+      <div className="w-full h-full absolute inset-0 pointer-events-none">
         <Leva />
         <Canvas className="w-full h-full">
           <Suspense fallback={<CanvasLoader />}>
