@@ -21,11 +21,24 @@ const NavItems =()=>{
   
    return (
      <header className='fixed top-0 left-0 right-0 z-50 bg-black/90'>
-      <div className='max-w-7xl mx-auto'>
+      <div className='max-w-8xl mx-auto'>
         <div className='flex justify-between items-center py-5 mx-auto c-space'>
-        <a href ='/' className='text-neutral-400 font-bold text-xl hover:text-white transition-colors '>
-        Akash 
-        </a>
+          <div className="absolute  left-0 z-50 p-400">
+  
+  </div>
+  
+        <a
+  href="/"
+  className="flex items-center gap-[4px] text-neutral-400 font-bold text-xl leading-none hover:text-white transition-colors"
+>
+  <img
+    src="/assets/dancing.gif"
+    alt="logo gif"
+    className="w-15 h-9 object-contain"
+  />
+  <span className="leading-none">SRI AKASH</span>
+</a>
+
         <button onClick={toggleMenu} className="text-neutral-400 hover:text-white focus:outline-none sm:hidden flex" aria-label="Toggle menu">
           <img src={isOpen ? "/assets/close.svg" : "/assets/menu.svg"} alt ='toggle' className='w-6 h-6' />
 

@@ -48,7 +48,7 @@ export const MagneticText = () => {
       {text.split("").map((char, index) => (
         <span
           key={index}
-          className="letter inline-block text-3xl md:text-5xl font-semibold text-gray-300 transition-transform duration-150"
+          className="letter inline-block text-3xl md:text-5xl font-semibold text-gray-300 transition-transform duration-250"
         >
           {char === " " ? "\u00A0" : char}
         </span>
