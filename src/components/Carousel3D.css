@@ -1,0 +1,35 @@
+.carousel-wrapper {
+  width: 480px;
+  height: 480px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 1400px;
+}
+
+.spin-container {
+  position: relative;
+  width: 200px;
+  height: 280px;
+  transform-style: preserve-3d;
+}
+
+.spin-container img {
+  position: absolute;
+  width: 150px;        
+  height: 220px;
+  object-fit: cover;
+  border-radius: 16px;
+  backface-visibility: hidden;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.75);
+}
+
+
+@keyframes spin {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}

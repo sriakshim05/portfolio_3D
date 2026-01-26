@@ -32,11 +32,11 @@ const NavItems =()=>{
   className="flex items-center gap-[4px] text-neutral-400 font-bold text-xl leading-none hover:text-white transition-colors"
 >
   <img
-    src="/assets/dancing.gif"
+    src="/assets/akashgifprofile.png"
     alt="logo gif"
-    className="w-15 h-9 object-contain"
+    className="w-13 h-7 object-contain"
   />
-  <span className="leading-none">SRI AKASH</span>
+  <span className="leading-none ">SRI AKASH</span>
 </a>
 
         <button onClick={toggleMenu} className="text-neutral-400 hover:text-white focus:outline-none sm:hidden flex" aria-label="Toggle menu">

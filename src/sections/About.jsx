@@ -1,37 +1,32 @@
 import React from "react";
-import { SplineScene } from "../components/SplineScene.jsx";
-import { Card } from "../components/Card.jsx";
-import { Spotlight } from "../components/Spotlight.jsx";
+import Carousel3D from "../components/Carousel3D";
 
 export default function About() {
   return (
-    <Card className="w-full h-[500px] bg-black/[0.96] relative overflow-hidden">
-      
-      {/* Spotlight effect ONLY */}
-      <Spotlight className="-top-40 left-0 md:left-60 md:-top-20" />
-
-      <div className="flex h-full relative z-10">
+    <section className="w-full min-h-screen bg-[#010103] flex items-center">
+      <div className="w-full max-w-7xl mx-auto px-16 flex items-center justify-between">
         
-        {/* LEFT SIDE - TEXT */}
-        <div className="flex-1 p-8 flex flex-col justify-center">
-          <h1 className="text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400">
-            About Me
+        <div className="max-w-xl">
+          <h1 className="text-5xl font-bold text-white mb-6">
+            About
           </h1>
 
-          <p className="mt-4 text-neutral-300 max-w-lg">
-            Something about me
+          <p className="text-gray-300 leading-relaxed text-lg">
+            Currently pursuing B.E Computer Science (2023–2027) at Kongu Engineering
+            College, Perundurai, where I focus on building strong fundamentals in
+            software engineering and problem solving.
+            <br /><br />
+            I enjoy turning ideas into experiences through Flutter apps and modern
+            web development, and I’m especially curious about how AI can be used
+            to create smarter, more personalized products.
           </p>
         </div>
 
-        {/* RIGHT SIDE - ROBOT */}
-        <div className="flex-1 relative">
-          <SplineScene
-            scene="https://prod.spline.design/kZDDjO5HuC9GJUM2/scene.splinecode"
-            className="w-full h-full"
-          />
+        <div className="relative -mr-10">
+          <Carousel3D />
         </div>
 
       </div>
-    </Card>
+    </section>
   );
 }
