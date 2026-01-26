@@ -21,7 +21,7 @@ export const Hero = () => {
 
   <div className="relative z-40 w-full mx-auto flex flex-col sm:mt-36 mt-20 c-space gap-3">
     <p className="sm:text-3xl text-2xl font-medium text-white text-center">
-      Hi I am Akash 👋
+       Hi I am Akash 👋
     </p>
     <MagneticText />
   </div>
@@ -38,13 +38,18 @@ export const Hero = () => {
           rotation={[0, -Math.PI, 0]}
           scale={sizes.deskScale}
         />
+        <group>
+          
+        </group>
         <ambientLight intensity={1} />
         <directionalLight position={[10, 10, 10]} intensity={0.5} />
       </Suspense>
     </Canvas>
+    
   </div>
 
 </section>
 
-  )
+  );
+ 
 }
