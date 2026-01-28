@@ -17,7 +17,8 @@ export const Hero = () => {
   const isTablet=useMediaQuery({maxWidth:1024 ,minWidth:768});
   const sizes=calculateSizes(isSmall,isMobile,isTablet);
   return (
-   <section className="min-h-screen w-full flex flex-col relative">
+   <section 
+   id ="home"className="min-h-screen w-full flex flex-col relative">
 
   <div className="relative z-40 w-full mx-auto flex flex-col sm:mt-36 mt-20 c-space gap-3">
     <p className="sm:text-3xl text-2xl font-medium text-white text-center">

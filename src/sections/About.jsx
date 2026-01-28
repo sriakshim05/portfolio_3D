@@ -3,7 +3,9 @@ import Carousel3D from "../components/Carousel3D";
 
 export default function About() {
   return (
-    <section className="w-full min-h-screen bg-[#010103] flex items-center">
+    <section
+    id="about" 
+    className="w-full min-h-screen bg-[#010103] flex items-center">
       <div className="w-full max-w-7xl mx-auto px-16 flex items-center justify-between">
         
         <div className="max-w-xl">
