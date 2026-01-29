@@ -9,7 +9,7 @@ export const Aboutmagnetic = () => {
 
    useEffect(()=>{
     lettersRef.current=containerRef.current.qquerySelectorAll(".letter");
-
+    
    },[]);
 
 
