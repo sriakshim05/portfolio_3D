@@ -7,16 +7,16 @@
   justify-content: center;
 }
 
-/* BIG CENTER IMAGE */
+
 .hero-image {
-  height: 60vh;               /* Reduced height for better proportions */
+  height: 60vh;               
   object-fit: contain;
   z-index: 2;
   pointer-events: none;
   filter: drop-shadow(0 30px 80px rgba(0,0,0,0.6));
 }
 
-/* ORBIT CONTAINER */
+
 .orbit {
   position: absolute;
   width: 400px;
@@ -29,7 +29,7 @@
   will-change: transform;
 }
 
-/* ORBIT ITEMS */
+
 .orbit img {
   position: absolute;
   top: 50%;

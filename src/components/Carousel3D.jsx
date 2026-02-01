@@ -18,7 +18,6 @@ export default function Carousel3D() {
   return (
     <div className="hero-visual">
 
-      {/* BIG CENTER IMAGE with glow */}
       <div className="relative">
         <div className="absolute inset-0 bg-gradient-to-t  bg-black/90  bg-black/90 blur-3xl"></div>
         <img
@@ -28,7 +27,6 @@ export default function Carousel3D() {
         />
       </div>
 
-      {/* SMALL ORBIT */}
       <div className="orbit" ref={spinRef}>
         <img src="/assets/akashgifprofile.png" />
         <img src="/assets/akashchennaipixel.png" />

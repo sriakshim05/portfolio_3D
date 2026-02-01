@@ -6,13 +6,12 @@ export default function About() {
       id="about"
       className="relative min-h-screen bg-black/90 overflow-hidden"
     >
-      {/* Background blur orbs (optional – keep or remove) */}
+      
       <div className="absolute top-1/4 left-1/4 w-96 h-96  bg-black/90 rounded-full blur-3xl"></div>
       <div className="absolute bottom-1/4 right-1/4 w-96 h-96  bg-black/90 rounded-full blur-3xl"></div>
 
       <div className="max-w-7xl mx-auto px-16 h-screen grid grid-cols-2 items-center gap-12">
 
-        {/* LEFT TEXT */}
         <div className="z-10 space-y-6">
           <div className="space-y-2">
             <h1 className="text-7xl font-bold bg-gradient-to-r from-white via-purple-200 to-blue-200 bg-clip-text text-transparent mb-2">
@@ -48,7 +47,6 @@ export default function About() {
           </div>
         </div>
 
-        {/* RIGHT VISUAL */}
         <div className="relative h-full flex items-center justify-center">
           <Carousel3D />
         </div>
