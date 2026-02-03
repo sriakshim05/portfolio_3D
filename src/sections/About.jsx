@@ -1,4 +1,7 @@
 import Carousel3D from "../components/Carousel3D";
+import {Aboutmagnetic} from '../components/Aboutmagnetic.jsx'
+
+
 
 export default function About() {
   return (
@@ -15,7 +18,7 @@ export default function About() {
         <div className="z-10 space-y-6">
           <div className="space-y-2">
             <h1 className="text-7xl font-bold bg-gradient-to-r from-white via-purple-200 to-blue-200 bg-clip-text text-transparent mb-2">
-              About
+              <Aboutmagnetic/>
             </h1>
             
           </div>
