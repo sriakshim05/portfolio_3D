@@ -7,6 +7,7 @@ import { Leva, useControls } from 'leva'
 import {MagneticText} from '../components/MagneticText.jsx'
 import { useMediaQuery } from 'react-responsive'
 import { calculateSizes } from '../constants/index.js'
+import Bottom from '../components/Bottom.jsx'
 
 
 
@@ -40,7 +41,7 @@ export const Hero = () => {
           scale={sizes.deskScale}
         />
         <group>
-          
+          <Bottom position={sizes.bottomPosition} />
         </group>
         <ambientLight intensity={1} />
         <directionalLight position={[10, 10, 10]} intensity={0.5} />
